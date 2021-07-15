@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,22 +19,35 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.red[600],
       ),
       body: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Text('hello world'),
-          TextButton(
-            onPressed: () {},
-            child: Text('Click me'),
-            style: TextButton.styleFrom(
-              backgroundColor: Colors.amber,
-            )
+          Expanded(
+            flex: 3,
+              child: Image.asset('assets/dog1.jpg')
           ),
-          Container(
-            color: Colors.cyan,
-            padding: EdgeInsets.all(30.0),
-            child: Text('hello container'),
-          )
+          Expanded(
+            flex: 3,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.cyan,
+              child: Text('1'),
+            ),
+          ),
+          Expanded(
+            flex: 2,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.pinkAccent,
+              child: Text('2'),
+            ),
+          ),
+          Expanded(
+            flex: 1,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.amber,
+              child: Text('1'),
+            ),
+          ),
         ],
       ),
       floatingActionButton: FloatingActionButton(
