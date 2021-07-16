@@ -14,3 +14,20 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+# flutter
+- Everything is a widget
+- Uses Material design
+- Scaffold AppBar Container Image Icon etc
+- Stateless & Stateful
+- Build method
+---
+- Stateless Widget
+Immutable state that can not be changed during runtime
+- Stateful Widget
+Mutable state that can be redrawn on the screen multiple times
+
+## IDE
+- Android Studio: Flutter Plugin
+- VScode: Flutter Dart
+
