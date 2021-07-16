@@ -26,6 +26,13 @@ class _HomeState extends State<Home> {
                       Navigator.pushNamed(context, '/world_time_loading');
                     },
                   ),
+                  ListTile(
+                    leading: Icon(Icons.book),
+                    title: Text('Word Pair Generator'),
+                    onTap: () {
+                      Navigator.pushNamed(context, '/word_pair_generate');
+                    },
+                  ),
                 ],
               ),
             ),
