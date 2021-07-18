@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/pages/plant_bottom_nav_bar.dart';
 import 'package:flutter_app/pages/plant_home_body.dart';
 import 'package:flutter_app/utilities/constants.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -11,6 +12,7 @@ class PlantHome extends StatelessWidget {
     return Scaffold(
       appBar: buildAppBar(),
       body: PlantHomeBody(),
+      bottomNavigationBar: PlantBottomNavBar(),
     );
   }
 
@@ -27,4 +29,3 @@ class PlantHome extends StatelessWidget {
     );
   }
 }
-
