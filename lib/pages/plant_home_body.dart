@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/pages/plant_header_with_search_box.dart';
+import 'package:flutter_app/pages/plant_recomend_list.dart';
 import 'package:flutter_app/pages/plant_title.dart';
-import 'package:flutter_app/utilities/constants.dart';
 
 class PlantHomeBody extends StatelessWidget {
   const PlantHomeBody({Key? key}) : super(key: key);
@@ -17,6 +17,7 @@ class PlantHomeBody extends StatelessWidget {
             title: 'More',
             press: () {},
           ),
+          PlantRecomentList(),
         ],
       ),
     );
