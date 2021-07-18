@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/pages/plant_feature_list.dart';
 import 'package:flutter_app/pages/plant_header_with_search_box.dart';
 import 'package:flutter_app/pages/plant_recomend_list.dart';
 import 'package:flutter_app/pages/plant_title.dart';
@@ -14,10 +15,12 @@ class PlantHomeBody extends StatelessWidget {
         children: <Widget>[
           HeaderWithSearchBox(size: size),
           TitleWithMoreButton(
-            title: 'More',
+            title: 'Recomend Plants',
             press: () {},
           ),
           PlantRecomentList(),
+          TitleWithMoreButton(title: 'Featured Plants', press: () {}),
+          PlantFeatureList(),
         ],
       ),
     );

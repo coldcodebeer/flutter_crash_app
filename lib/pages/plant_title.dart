@@ -18,7 +18,7 @@ class TitleWithMoreButton extends StatelessWidget {
       child: Row(
         children: [
           TitleWithCustomUnderline(
-            text: 'Recomended',
+            text: title,
           ),
           Spacer(),
           TextButton(
@@ -30,7 +30,7 @@ class TitleWithMoreButton extends StatelessWidget {
               ),
             ),
             child: Text(
-              title,
+              'More',
               style: TextStyle(
                 color: Colors.white,
               ),
