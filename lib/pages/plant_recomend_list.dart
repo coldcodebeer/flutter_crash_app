@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/pages/plant_detail.dart';
 import 'package:flutter_app/utilities/constants.dart';
+
+import '../utilities/constants.dart';
+import 'plant_detail.dart';
 
 class PlantRecomentList extends StatelessWidget {
   const PlantRecomentList({
@@ -17,21 +21,42 @@ class PlantRecomentList extends StatelessWidget {
             title: 'Samantha',
             country: 'Russia',
             price: 440,
-            press: () {},
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => PlantDetail(),
+                ),
+              );
+            },
           ),
           PlantRecomendCard(
             image: 'assets/image_2.png',
             title: 'Angelica',
             country: 'Russia',
             price: 440,
-            press: () {},
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => PlantDetail(),
+                ),
+              );
+            },
           ),
           PlantRecomendCard(
             image: 'assets/image_3.png',
             title: 'Samantha',
             country: 'Russia',
             price: 440,
-            press: () {},
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => PlantDetail(),
+                ),
+              );
+            },
           ),
         ],
       ),
@@ -51,7 +76,7 @@ class PlantRecomendCard extends StatelessWidget {
 
   final String image, title, country;
   final int price;
-  final Function() press;
+  final VoidCallback press;
 
   @override
   Widget build(BuildContext context) {
