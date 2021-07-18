@@ -38,6 +38,13 @@ class _HomeState extends State<Home> {
                     Navigator.pushNamed(context, '/login_screen');
                   },
                 ),
+                ListTile(
+                  leading: Icon(Icons.grass),
+                  title: Text('Plant App'),
+                  onTap: () {
+                    Navigator.pushNamed(context, '/plant_app');
+                  },
+                ),
               ],
             ),
           ),

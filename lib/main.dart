@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/pages/choose_location.dart';
 import 'package:flutter_app/pages/login_screen.dart';
+import 'package:flutter_app/pages/plant_home.dart';
 import 'package:flutter_app/pages/word_pair_generator.dart';
 import 'package:flutter_app/pages/world_time_home.dart';
 import 'package:flutter_app/pages/home.dart';
@@ -8,6 +9,7 @@ import 'package:flutter_app/pages/loading.dart';
 
 void main() {
   runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
     initialRoute: '/home',
     routes: {
       '/world_time_loading': (context) {
@@ -18,6 +20,7 @@ void main() {
       '/world_time_location': (context) => ChooseLocation(),
       '/word_pair_generate': (context) => WordPairGenerator(),
       '/login_screen': (context) => LoginScreen(),
+      '/plant_app': (context) => PlantHome(),
     },
   ));
 }
