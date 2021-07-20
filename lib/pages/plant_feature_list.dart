@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_app/utilities/constants.dart';
 
@@ -34,7 +36,7 @@ class PlantFeatureCard extends StatelessWidget {
   }) : super(key: key);
 
   final String image;
-  final Function() press;
+  final void Function() press;
 
   @override
   Widget build(BuildContext context) {

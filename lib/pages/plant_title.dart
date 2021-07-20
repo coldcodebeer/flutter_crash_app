@@ -9,7 +9,7 @@ class TitleWithMoreButton extends StatelessWidget {
   }) : super(key: key);
 
   final String title;
-  final Function() press;
+  final void Function() press;
 
   @override
   Widget build(BuildContext context) {
