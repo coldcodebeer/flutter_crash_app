@@ -1,0 +1,6 @@
+- Dart is one of very few languages (and perhaps the only “mainstream” language) that is well suited to **being compiled both AOT and JIT**. Supporting both kinds of compilation provides significant advantages to Dart and (especially) Flutter.
+- JIT compilation is used during development, using a compiler that is especially fast. Then, when an app is ready for release, it is compiled AOT. Consequently, with the help of advanced tooling and compilers, Dart can deliver the best of both worlds: extremely fast development cycles, and fast execution and startup times.
+- Dart can be compiled into JavaScript so it can be executed by browsers. This allows code reuse between mobile apps and web apps.
+- One of the most popular features of Flutter is its extremely fast hot reload. During development, Flutter uses a JIT compiler that can reload and continue executing code usually in under a second.
+- Dart’s ability to be AOT compiled to native machine code.Pre-compiled AOT code is more predictable than JIT because there are no pauses during runtime to perform JIT analysis or compilation.
+- Dart, like JavaScript, is single threaded, which means it does not allow preemption at all.
